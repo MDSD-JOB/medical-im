@@ -1,0 +1,59 @@
+.im-friends-wrapper {
+  .friend-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  /deep/ .van-index-anchor {
+    color: #999;
+    background-color: #fbf9fe;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .van-cell {
+    display: flex;
+    align-items: center;
+  }
+  /deep/ .van-checkbox__icon {
+    margin-left: 20px;
+    width: 50px;
+    &.van-checkbox__icon--checked {
+      .van-icon {
+        background-color: #333bd2;
+        border-color: #333bd2;
+      }
+    }
+  }
+  .friends-avatar {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  .groupBtn {
+    width: 150px;
+    height: 150px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    // line-height: 150px;
+    position: fixed;
+    bottom: 200px;
+    right: 0;
+    background: #333bd2;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 34px;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+  .van-button {
+    background: #333bd2;
+    border-color: #333bd2;
+  }
+}

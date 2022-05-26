@@ -1,0 +1,47 @@
+.med-header-wrapper {
+  &.med-header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .van-nav-bar.med-header-nav-bar {
+    padding: 60px 0 30px;
+    background: #333bd2;
+    // background: linear-gradient(45deg, rgb(51, 59, 210), rgb(88, 102, 235));
+    color: #fff;
+    &.van-hairline--bottom::after {
+      border-bottom: none;
+      border-bottom-width: 0;
+      display: none;
+    }
+    .van-icon-arrow-left,
+    .van-nav-bar__text {
+      font-size: 36px;
+      color: #fff;
+    }
+    .van-nav-bar__title {
+      font-size: 36px;
+      color: #fff;
+    }
+    .van-nav-bar__content {
+      font-size: 36px;
+      height: 100%;
+      line-height: 100%;
+    }
+    .van-nav-bar__right {
+      padding: 0 18px;
+      i {
+        font-size: 40px;
+        padding: 0 12px 0 12px;
+      }
+    }
+  }
+  &&-wide {
+    .van-nav-bar.med-header-nav-bar {
+      padding: 60px 0;
+      // box-shadow: 0 12px 20px rgb(51 59 210 / 30%);
+    }
+  }
+}

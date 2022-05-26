@@ -1,0 +1,86 @@
+{
+  "name": "mdsd-webview-template",
+  "version": "0.1.2",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/runtime": "^7.16.5",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.2.3",
+    "classnames": "^2.3.1",
+    "core-js": "^3.19.3",
+    "lib-flexible": "^0.3.2",
+    "lodash": "^4.17.21",
+    "recorderx": "^2.0.2",
+    "regenerator-runtime": "^0.13.9",
+    "store": "^2.0.12",
+    "vant": "^2.12.31",
+    "vue": "^2.6.6",
+    "vue-moment": "^4.1.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^13.1.0",
+    "@vue/babel-preset-app": "^4.5.15",
+    "@vue/cli-plugin-babel": "^4.0.4",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.8.0",
+    "commitizen": "^4.2.4",
+    "commitlint": "^13.1.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^3.1.0",
+    "less": "^4.1.2",
+    "less-loader": "^7.3.0",
+    "lint-staged": "^9.5.0",
+    "postcss-px2rem-exclude": "^0.0.6",
+    "prettier": "^1.19.1",
+    "style-resources-loader": "^1.4.1",
+    "svg-sprite-loader": "^6.0.11",
+    "terser-webpack-plugin": "^1.4.1",
+    "vue-cli-plugin-style-resources-loader": "~0.1.5",
+    "vue-cli-plugin-vconsole2": "~1.1.0",
+    "vue-template-compiler": "^2.5.21",
+    "webpack-bundle-analyzer": "^3.4.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

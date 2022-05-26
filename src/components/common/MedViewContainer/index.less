@@ -1,0 +1,14 @@
+.med-view-container-wrapper {
+  width: 100%;
+  height: 100%;
+  .med-view-container-body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &.med-view-container-disable-scroll {
+    > .med-view-container-body {
+      overflow-y: hidden;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.im-chat-detail-wrapper {
+  /deep/ .med-view-container-body {
+    background-color: #f8f8f8;
+  }
+  .scroll-wrapper {
+    height: 100%;
+    overflow: auto;
+    .chat-detail {
+      padding: 30px 20px 20px;
+      &.clearfix {
+        &::after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+      }
+      .chat {
+        display: block;
+        max-width: 500px;
+        margin-bottom: 50px;
+        width: 100%;
+        align-items: center;
+        .avatar {
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          border-radius: 12px;
+        }
+        .content {
+          max-width: 80%;
+          span {
+            color: #999;
+          }
+          .text {
+            box-shadow: 10px 10px 30px #e0e0e3, -10px 0px 30px #ffffff;
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 12px;
+            font-size: 28px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin-top: 10px;
+            &::after {
+              width: 0;
+              height: 0;
+              position: absolute;
+              top: 10px;
+              content: '';
+              border: 16px solid transparent;
+            }
+          }
+        }
+        &.cleft {
+          float: left;
+          display: flex;
+          .content {
+            span {
+              margin-left: 20px;
+            }
+          }
+          .text {
+            margin-left: 20px;
+            &::after {
+              left: -32px;
+              border-right-color: #fff;
+            }
+          }
+        }
+        &.cright {
+          float: right;
+          display: flex;
+          flex-direction: row-reverse;
+          .content {
+            span {
+              margin-right: 20px;
+            }
+          }
+          .text {
+            margin-right: 20px;
+            &::after {
+              right: -32px;
+              border-left-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 10px;
+    .inputs {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .recorders {
+      width: 100%;
+    }
+    .van-icon,
+    .iconfont {
+      font-size: 48px;
+      margin-right: 10px;
+    }
+    .van-field {
+      border: 1px solid #000;
+      padding: 10px 10px;
+      width: 65%;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+    .van-button {
+      background-color: #333bd2;
+      border-color: #333bd2;
+      padding: 14px 20px;
+      height: auto;
+    }
+  }
+}

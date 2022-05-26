@@ -1,0 +1,119 @@
+.audio__wrap {
+  &.audioleft {
+    margin-left: 20px;
+    .self__audio {
+      .audio__duration {
+        right: -76px;
+      }
+      .audio__trigger {
+        &::after {
+          left: -32px;
+          border-right-color: #e0effb;
+        }
+        .wifi-symbol {
+          left: 10px;
+          transform: rotate(135deg) scale(0.7);
+        }
+      }
+    }
+  }
+  &.audioright {
+    margin-right: 20px;
+    .self__audio {
+      .audio__duration {
+        left: -76px;
+      }
+      .audio__trigger {
+        &::after {
+          right: -32px;
+          border-left-color: #e0effb;
+        }
+        .wifi-symbol {
+          right: 10px;
+          transform: rotate(-45deg) scale(0.7);
+        }
+      }
+    }
+  }
+  .self__audio {
+    position: relative;
+    .audio__duration {
+      position: absolute;
+
+      display: inline-block;
+      line-height: 80px;
+      height: 80px;
+      padding-right: 6px;
+      color: #888888;
+    }
+    .audio__trigger {
+      cursor: pointer;
+      vertical-align: top;
+      display: inline-block;
+      line-height: 80px;
+      height: 80px;
+      width: 200px;
+      background-color: #e0effb;
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 6px 6px 10px #e0e0e3, -6px 0px 10px #fff;
+      &::after {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 10px;
+        content: '';
+        border: 16px solid transparent;
+      }
+      .wifi-symbol {
+        position: absolute;
+        top: 8px;
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .wifi-circle {
+          border: 5px solid #999999;
+          border-radius: 50%;
+          position: absolute;
+        }
+
+        .first {
+          width: 5px;
+          height: 5px;
+          background: #cccccc;
+          top: 45px;
+          left: 45px;
+        }
+        .second {
+          width: 25px;
+          height: 25px;
+          top: 35px;
+          left: 35px;
+        }
+        .third {
+          width: 40px;
+          height: 40px;
+          top: 25px;
+          left: 25px;
+        }
+      }
+      .wifi-symbol--avtive {
+        .second {
+          animation: bounce 1s infinite 0.2s;
+        }
+        .third {
+          animation: bounce 1s infinite 0.4s;
+        }
+      }
+    }
+    @keyframes bounce {
+      0% {
+        opacity: 0; /*初始状态 透明度为0*/
+      }
+      100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "3365962",
+  "name": "mdsd-im",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "745702",
+      "name": "ShutDown",
+      "font_class": "shutdown",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "1381825",
+      "name": "通讯录",
+      "font_class": "tongxunlu1",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "1240500",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "212332",
+      "name": "group",
+      "font_class": "group",
+      "unicode": "e753",
+      "unicode_decimal": 59219
+    },
+    {
+      "icon_id": "90847",
+      "name": "keyboard",
+      "font_class": "keyboard",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
+      "icon_id": "158975",
+      "name": "file",
+      "font_class": "file",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    },
+    {
+      "icon_id": "6145441",
+      "name": "bell-mute-2",
+      "font_class": "bell-mute-",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    }
+  ]
+}

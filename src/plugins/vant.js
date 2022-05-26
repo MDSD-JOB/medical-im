@@ -1,0 +1,104 @@
+import Vue from 'vue'
+import {
+  Button,
+  Cell,
+  SwipeCell,
+  Image,
+  Loading,
+  Overlay,
+  Tabbar,
+  TabbarItem,
+  Swipe,
+  SwipeItem,
+  PullRefresh,
+  List,
+  Field,
+  Icon,
+  Card,
+  Tag,
+  Tabs,
+  Tab,
+  CellGroup,
+  NavBar,
+  Popup,
+  Picker,
+  CountDown,
+  Toast,
+  Dialog,
+  Form,
+  Search,
+  Calendar,
+  Notify,
+  NoticeBar,
+  ShareSheet,
+  DatetimePicker,
+  Radio,
+  RadioGroup,
+  Checkbox,
+  IndexBar,
+  IndexAnchor,
+  ActionSheet,
+  Area,
+  Collapse,
+  CollapseItem,
+  CheckboxGroup,
+  DropdownMenu,
+  DropdownItem,
+  Uploader,
+  Popover,
+  Empty,
+  Row,
+  Col,
+  Badge
+} from 'vant'
+
+Vue.use(Badge)
+Vue.use(Popover)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Uploader)
+Vue.use(Checkbox)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(DatetimePicker)
+Vue.use(ShareSheet)
+Vue.use(NoticeBar)
+Vue.use(Notify)
+Vue.use(Dialog)
+Vue.use(Calendar)
+Vue.use(Search)
+Vue.use(Form)
+Vue.use(Toast)
+Vue.use(CountDown)
+Vue.use(Picker)
+Vue.use(Popup)
+Vue.use(NavBar)
+Vue.use(CellGroup)
+Vue.use(Tabs)
+Vue.use(Tab)
+Vue.use(Tag)
+Vue.use(Card)
+Vue.use(Icon)
+Vue.use(Button)
+Vue.use(Cell)
+Vue.use(SwipeCell)
+Vue.use(Image)
+Vue.use(Overlay)
+Vue.use(Loading)
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
+Vue.use(Swipe)
+Vue.use(SwipeItem)
+Vue.use(PullRefresh)
+Vue.use(List)
+Vue.use(Field)
+Vue.use(IndexBar)
+Vue.use(IndexAnchor)
+Vue.use(ActionSheet)
+Vue.use(Area)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(CheckboxGroup)
+Vue.use(Empty)
+Vue.use(Row)
+Vue.use(Col)
